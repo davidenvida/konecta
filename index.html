@@ -3,57 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KONECTA - Allies in Brand Expansion. Conectando LATAM y Asia.">
+    <meta name="description" content="KONECTA - Allies in Brand Expansion. El puente global entre LATAM y Asia para la excelencia empresarial.">
+    <meta name="keywords" content="comercio internacional, LATAM, Asia, Japón, expansión empresarial, ferias internacionales">
     <title>KONECTA | Allies in Brand Expansion</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo-konecta.png">
 </head>
 <body>
-    <!-- Formas decorativas -->
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
+    <!-- Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <main class="container">
-        <!-- Logo -->
-        <div class="logo-container">
-            <img src="assets/logo-konecta.png" alt="KONECTA" class="logo">
+    <!-- Floating Header (appears on scroll) -->
+    <nav class="floating-nav" id="floatingNav">
+        <a href="#inicio" class="nav-logo">
+            <img src="assets/logo-konecta.png" alt="KONECTA">
+        </a>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proposito">Propósito</a>
         </div>
+        <a href="#contacto" class="nav-cta">Conéctate</a>
 
-        <!-- Slogan -->
-        <p class="slogan">Allies in Brand Expansion</p>
+        <!-- Mobile toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-        <!-- Mensaje principal -->
-        <div class="content">
-            <h1 class="title">
-                <span class="title-line">Estamos</span>
-                <span class="title-line highlight">construyendo</span>
-                <span class="title-line">algo increíble</span>
-            </h1>
-
-            <p class="description">
-                Muy pronto conectaremos LATAM y Asia con soluciones globales de expansión empresarial.
-            </p>
-
-            <!-- Loader animado -->
-            <div class="loader">
-                <div class="loader-bar"></div>
-            </div>
-            <p class="loader-text">Preparando tu experiencia...</p>
-        </div>
-
-        <!-- Contacto -->
-        <div class="contact">
-            <p>¿Quieres saber más?</p>
-            <a href="mailto:info@konecta.com" class="contact-link">Contáctanos</a>
-        </div>
-    </main>
-
-    <!-- Partículas de conexión -->
+    <!-- Partículas de fondo (toda la página) -->
     <canvas id="particles"></canvas>
 
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <!-- Formas decorativas (solo en hero) -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+
+        <div class="hero__container">
+            <div class="hero__content">
+                <!-- Hero Logo -->
+                <div class="hero__logo">
+                    <img src="assets/logo-konecta.png" alt="KONECTA">
+                    <p class="hero__logo-tagline">Allies in Brand Expansion</p>
+                </div>
+                <!-- Separador sutil -->
+                <div class="hero__separator"></div>
+                <h1 class="hero__title">
+                    Tu Alianza
+                    <span class="hero__title--accent">Estratégica</span>
+                    Global.
+                </h1>
+                <p class="hero__description">
+                    En un mundo de infinitas oportunidades, la distancia y las diferencias culturales
+                    no deberían ser una barrera para la calidad. KONECTA es el puente que une
+                    América Latina y Asia.
+                </p>
+                <a href="#contacto" class="btn btn--primary hero__cta">Contáctanos</a>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="section-divider section-divider--wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="nosotros">
+        <div class="about__container">
+            <div class="about__header">
+                <span class="section-tag">Sobre Nosotros</span>
+                <h2 class="section-title">
+                    KONECTA:
+                    <span class="section-title--accent">El Puente Global</span>
+                    para la Excelencia
+                </h2>
+            </div>
+
+            <div class="about__content">
+                <div class="about__text">
+                    <div class="about__challenge">
+                        <h3>El Desafío Japonés</h3>
+                        <p>
+                            Vimos innumerables empresas en América Latina y Europa con productos
+                            de calidad superior que, a pesar de su potencial, fracasaban al intentar
+                            ingresar al exigente mercado japonés. La falta de representación local
+                            estratégica, el desconocimiento de la logística específica o la ausencia
+                            de adaptación cultural adecuada, convertían el sueño en frustración.
+                        </p>
+                    </div>
+
+                    <div class="about__barrier">
+                        <h3>La Barrera en Desarrollo</h3>
+                        <p>
+                            Paralelamente, identificamos que las empresas que prestaban estos
+                            servicios integrales solían ofrecer una estructura de costes que
+                            resultaba inasumible o excesivamente encarecida para los países
+                            en desarrollo, como la vibrante región de América Latina.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__visual">
+                    <div class="about__map">
+                        <div class="about__connection">
+                            <div class="about__point about__point--latam">
+                                <div class="pulse-ring"></div>
+                                <span>LATAM</span>
+                            </div>
+                            <svg class="about__curve-line" viewBox="0 0 300 100">
+                                <path d="M0,50 Q150,0 300,50" stroke="url(#bridgeGradient)" fill="none" stroke-width="3"/>
+                                <defs>
+                                    <linearGradient id="bridgeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#00224d"/>
+                                        <stop offset="100%" style="stop-color:#ff6e37"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="about__point about__point--asia">
+                                <div class="pulse-ring"></div>
+                                <span>ASIA</span>
+                            </div>
+                        </div>
+                        <img src="assets/K.png" alt="Konecta K" class="about__k-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagonal Divider -->
+    <div class="section-divider section-divider--diagonal section-divider--to-dark"></div>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <canvas id="servicesParticles"></canvas>
+
+        <div class="services__header">
+            <span class="section-tag section-tag--light">Lo que hacemos</span>
+            <h2 class="section-title section-title--light">
+                Servicios que
+                <span class="section-title--accent-light">conectan</span>
+            </h2>
+        </div>
+
+        <div class="services__track">
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/>
+                        <path d="M32 4C18.7 4 8 14.7 8 28s10.7 24 24 24" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                        <circle cx="32" cy="32" r="8" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Representación Internacional</h3>
+                <p>Actuamos como tu socio local en mercados asiáticos, gestionando relaciones comerciales y presencia en ferias.</p>
+                <div class="service-card__number">01</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <rect x="8" y="24" width="48" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 32h48M20 24V8M44 24V8" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="32" cy="44" r="6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Gestión de Ferias</h3>
+                <p>Organizamos tu participación en las ferias comerciales más importantes de Asia y el mundo.</p>
+                <div class="service-card__number">02</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M8 48h48M16 48V32l16-16 16 16v16" stroke="currentColor" stroke-width="2"/>
+                        <path d="M4 56l28-40 28 40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                    </svg>
+                </div>
+                <h3>Logística Internacional</h3>
+                <p>Gestionamos toda la cadena: importación, exportación, almacenaje y distribución en destino.</p>
+                <div class="service-card__number">03</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="40" cy="40" r="16" stroke="currentColor" stroke-width="2"/>
+                        <path d="M32 16v32M16 32h32" stroke="currentColor" stroke-width="2" stroke-dasharray="2 2"/>
+                    </svg>
+                </div>
+                <h3>Adaptación Cultural</h3>
+                <p>Adaptamos tu marca y productos a las exigencias culturales de cada mercado objetivo.</p>
+                <div class="service-card__number">04</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M32 8v48M8 32h48" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                    </svg>
+                </div>
+                <h3>Asesoría Legal</h3>
+                <p>Te guiamos en el cumplimiento de regulaciones y certificaciones para operar en Asia.</p>
+                <div class="service-card__number">05</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="44" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="32" cy="44" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 26l4 12M40 26l-4 12M28 20h8" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Networking Estratégico</h3>
+                <p>Conectamos tu empresa con socios, distribuidores y clientes potenciales en Asia.</p>
+                <div class="service-card__number">06</div>
+            </div>
+        </div>
+
+        <div class="services__progress">
+            <div class="services__progress-bar"></div>
+        </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section class="purpose" id="proposito">
+        <!-- Formas decorativas -->
+        <div class="purpose__shape purpose__shape--beige"></div>
+        <div class="purpose__shape purpose__shape--orange"></div>
+
+        <div class="purpose__container">
+            <!-- Imagen de la mujer de negocios -->
+            <div class="purpose__image">
+                <img src="assets/wom.png" alt="Profesional de negocios">
+            </div>
+
+            <!-- Contenido -->
+            <div class="purpose__content">
+                <div class="purpose__header">
+                    <h2 class="purpose__title">
+                        <span class="purpose__title--italic">Nuestro</span>
+                        <span class="purpose__title--bold">Propósito</span>
+                    </h2>
+                    <p class="purpose__subtitle">
+                        <strong>KONECTA</strong> no es solo una empresa de gestión; somos el catalizador que rompe estas barreras.
+                    </p>
+                </div>
+
+                <p class="purpose__text">
+                    <strong>Impulsamos negocios</strong> que merecen ser globales, proporcionando el know-how y la logística necesaria para triunfar. Nuestro compromiso es forjar cada alianza con ética inquebrantable, dedicación total y la obsesión por entregar resultados tangibles.
+                </p>
+
+                <!-- Mapa del mundo -->
+                <div class="purpose__map">
+                    <img src="assets/mapa.png" alt="Mapa LATAM - Asia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <canvas id="ctaParticles"></canvas>
+        <div class="cta__container">
+            <h2 class="cta__title">
+                ¿Listo para expandir tu negocio
+                <span>a mercados globales?</span>
+            </h2>
+            <p class="cta__text">
+                Conectemos y exploremos juntos las oportunidades que el mundo tiene para tu empresa.
+            </p>
+            <a href="#contacto" class="btn btn--primary btn--large">Agenda una Consulta</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact__container">
+            <div class="contact__info">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">
+                    ¿Listo para
+                    <span class="section-title--accent typing-text" id="typingText"></span>
+                </h2>
+                <p class="contact__description">
+                    Estamos listos para escuchar sobre tu proyecto y ayudarte a
+                    alcanzar nuevos mercados. Completa el formulario y nos pondremos
+                    en contacto contigo a la brevedad.
+                </p>
+
+                <div class="contact__details">
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@konecta.com">info@konecta.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Lima, Perú | Tokio, Japón</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <a href="tel:+819033159407">+81 90-3315-9407</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-wrapper">
+                <form class="contact__form" id="contactForm">
+                    <!-- Honeypot anti-spam (oculto) -->
+                    <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off">
+
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company" placeholder="Nombre de tu empresa">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Servicio de Interés</label>
+                        <select id="service" name="service">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="representacion">Representación Internacional</option>
+                            <option value="ferias">Gestión de Ferias</option>
+                            <option value="logistica">Logística Internacional</option>
+                            <option value="adaptacion">Adaptación Cultural</option>
+                            <option value="asesoria">Asesoría Legal y Normativa</option>
+                            <option value="networking">Networking Estratégico</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Enviar Mensaje</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <img src="assets/k7.png" alt="KONECTA" class="footer__logo">
+                    <p class="footer__tagline">Allies in Brand Expansion</p>
+                    <p class="footer__description">
+                        Conectando América Latina y Asia para impulsar negocios que merecen ser globales.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#proposito">Propósito</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#servicios">Representación Internacional</a></li>
+                            <li><a href="#servicios">Gestión de Ferias</a></li>
+                            <li><a href="#servicios">Logística Internacional</a></li>
+                            <li><a href="#servicios">Adaptación Cultural</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4>Síguenos</h4>
+                        <div class="footer__social">
+                            <a href="#" aria-label="LinkedIn" class="footer__social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="footer__social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="footer__social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 KONECTA. Todos los derechos reservados.</p>
+                <div class="footer__legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 </html>

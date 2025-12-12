@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/konejljx/konecta-dev/
-    - /bin/cp -R * $DEPLOYPATH
